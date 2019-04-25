@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coderscompanion.MainFXMLDocumentController">
+   <children>
+      <SplitPane dividerPositions="0.3394648829431438" orientation="VERTICAL" prefHeight="614.0" prefWidth="800.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="205.0" prefWidth="474.0">
+               <children>
+                  <ImageView layoutX="-1.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/galaxy.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="357.0" prefWidth="798.0">
+               <children>
+                  <ImageView fitHeight="458.0" fitWidth="842.0" opacity="0.16" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/mainMenu2_1.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="14.0" layoutY="132.0" prefHeight="80.0" prefWidth="243.0" text="PC Configuration">
+                     <font>
+                        <Font name="Ubuntu Medium" size="30.0" />
+                     </font>
+                  </Label>
+                  <JFXTextArea fx:id="configurationTextArea" editable="false" focusColor="#0e40d7" layoutX="311.0" layoutY="14.0" prefHeight="265.0" prefWidth="481.0" unFocusColor="BLACK" wrapText="true">
+                     <font>
+                        <Font name="Ubuntu Medium" size="28.0" />
+                     </font>
+                  </JFXTextArea>
+                  <JFXButton layoutX="311.0" layoutY="321.0" onAction="#goToChoiceMenu" prefHeight="66.0" prefWidth="155.0" stylesheets="@Main.css" text="Start!">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="TOGGLE_RIGHT" size="40" />
+                     </graphic>
+                     <font>
+                        <Font name="Ubuntu Medium" size="29.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

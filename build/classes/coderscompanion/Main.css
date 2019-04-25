@@ -1,0 +1,18 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 20, 2017, 11:59:35 PM
+    Author     : user
+*/
+
+.button:hover{
+    -fx-background-color: black;
+    -fx-text-fill:white;
+}
+
+.button:hover .glyph-icon{
+    -fx-fill:white;
+}
